@@ -60,7 +60,7 @@ server.delete('/notes/:id', (req, res) => {
     const remove = notes.splice(req.params.id, 1);
 
     return res.json({
-        resul: 'nota deletada',
+        result: 'nota deletada',
         note: remove
     });
 
@@ -81,7 +81,7 @@ server.put('/notes/:id', verifyData, (req, res) => {
     notes[id] = note;
 
     return res.json({
-        resul: 'nota atualizada',
+        result: 'nota atualizada',
         note: note
     });
 
